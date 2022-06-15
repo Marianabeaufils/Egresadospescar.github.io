@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    
+}
+
+:root{
+    ---font-titulos:'Roboto', sans-serif;
+    --font-texto:'Poppins', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #fd7302f1 20%,rgb(35, 64, 206) 80%);
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+  /*--- Link de direcciones ---*/  
+
+.nav-dir{
+    font-family: var(---font-titulos);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    position: inherit;
+    top: 80px;
+    color: #fff;
+    margin-left: 50px;
+}
+    
+/*--- FOTOS Y ABOUT ME ---*/
+
+.foto-sobre-mi{
+    position: absolute;
+    top:70px;
+    left: 250px;
+
+}
+
+.foto-cv{
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.title-sobremi{
+    font-family: var(---font-titulos);
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: .3rem;
+    color: #fff;
+}
+
+.sobre-mi{
+    width: 280px;
+    height: 190px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    position: relative;
+    
+   
+}
+
+.quote1, .quote2{
+    width: 20px;
+}
+.quote1{
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    animation: quote 1.5s infinite alternate-reverse;
+}
+ 
+.quote2{
+    position: absolute;
+    right: 7px;
+    bottom: 4px;
+    animation: quote 1.5s infinite alternate-reverse ;
+    animation-delay: 2s;
+    
+}
+/*
+@keyframes quote{
+    0%{
+        -webkit-transform: rotate(8deg);
+    }
+    
+    100%{
+        -webkit-transform: rotate(-8deg);
+        
+    }
+}
+*/
+.text-sobre-mi{
+    position: absolute;
+    margin: 35px 15px;
+    font-family: var(--font-texto);
+    font-size: .8em;
+    color: #fff;
+}
+
+/*--- INFORMACION EGRESADOS ---*/
+
+.info-egresados{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 65px;
+    left: 40vw;
+}
+
+.location{
+    
+    margin-bottom: .6rem;
+    margin-left: 10px;
+}
+
+.location img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(110%) contrast(102%);
+}
+
+.info-egresados img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.title-sub{
+    width: 500px;
+    height: auto;
+    font-family: var(---font-titulos);
+   
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.title-sub h1{
+    font-size: 3rem;
+    margin-bottom: .4rem;
+    margin-left: 7%;
+}
+
+.title-sub h2{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+    
+.info-egresados h3{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-family: var(---font-titulos);
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.tech-soft-skills{
+    width: 500px;
+    height: 200px; 
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+
+}
+
+.tech-skills h4{
+    font-family: var(---font-titulos);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    padding-top: 10px;
+}
+
+.tech-skills ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.tech-skills ul li{
+    margin-left: .5rem;
+    background-color: #8555EC;
+    margin-right: 5px;
+    color: #fff;
+    font-family: var(--font-texto);
+    font-size: .8rem;
+    padding: .2rem .7rem;
+}
+    
+.tech-skills{
+    margin-bottom: 1rem;
+}
+.soft-skills{
+    position: relative;
+    padding-left: 20px;
+}
+
+.soft-skills h4{
+    font-family: var(---font-titulos);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+    
+.soft-skills ul{
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+
+::marker{
+    color: #fff;
+}
+
+.list-1, .list-2{
+    color: #fff;
+}
+    
+.list-1{
+    position: absolute;
+    top: 40px;
+    left: 10%;
+}
+.list-2{
+    position: absolute;
+    top: 40px;
+    right: 25%;
+}
+
+.social-net{
+    width: 350px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    font-family: var(--font-texto);
+    font-size: .8rem;
+    margin-left: 5%;
+}
+
+.social-net p {
+    display: inline;
+    color: #fff;
+}
+.portfolio{
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+         
+.social-net a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-net a:hover{
+    text-decoration: underline;
+    color: #fc9c2e;
+}
+
+.social-net img{
+    width: 35px;
+    height: auto;
+    
+}
+
+.linked, .github, .twitter{
+    margin-bottom: 20px;
+    margin-left: 20px;
+} 
+    
+/*--- BUTONOES CV Y MAIL ---*/
+
+.container-email-cv{
+    position: absolute;
+    width: 265px;
+    height: auto;
+    
+    top: 190px;
+    left: 590px;
+}
+    
+.container-email-cv button{
+    
+    width: 160px;
+    height: 60px;
+    background-color: #fd7202 ;
+    border-radius: 22px;
+    border: none;
+    
+}
+
+.container-email-cv button a{
+    text-decoration: none;
+}
+
+.container-email-cv button:nth-child(2){
+    background-color: #7B61FF;
+    margin-top: 50px;
+}
+
+.container-email-cv button img{
+    width: 30px;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(110%) contrast(102%);
+    
+    
+}
+.container-email-cv button:hover{
+    border: #fff 1px solid;
+}
+
+.container-email-cv button img:hover{
+    transform: scale(1.1);
+}
+    
+
+.container-email-cv button p{
+    display: inline;
+    font-size: 1rem;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: .5rem;
+    font-family: var(---font-titulos);
+    font-size: 1rem;
+}
+
+ /*--- BOTONES: SIGUENTE Y ANTERIOR ---*/
+
+.botones{
+    width: 550px;
+    height: 70px;
+    position: absolute;
+    left: 20%;
+    bottom: 10px;
+    
+}
+    
+.botones button img{
+    width: 40px;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(110%) contrast(102%);
+    vertical-align: middle;
+}
+      
+.botones button{
+    
+    width: 190px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #34a853;
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(---font-titulos);
+    margin-left: 50px;
+}
+.botones .dos{
+ 
+  position: absolute;
+  margin-left: 80%;
+}
+       
+.botones button:nth-child(2){
+    background-color: #4285f4;
+    
+}
+.botones button p:nth-child(1){
+    margin-right: 15px;
+    
+}
+.botones button:hover{
+    border: #fff 1px solid;
+}
+.botones button img:hover{
+    transform: scale(1.1);
+}
+
+.botones button p{
+    display: inline-block;
+    margin-left: 15px;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background: #00000080;
+    backdrop-filter: blur(9px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    font-family:'Overpass', sans-serif;
+}
+
+
+.enlace{
+    position: absolute;
+    padding: 5px  50px;
+}
+.icono{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+nav ul li:first-child{
+    font-weight: 600;
+}
+li a.active, li a:hover{
+    background: #230981cc;
+    color: #ff7300;
+    transition: .5s;
+    
+}
+.whoa{
+    margin-left: 110px;
+    line-height: 70px;
+    color: white;
+    background: #230981;
+    padding: 15px;
+    border-radius: 15px;
+   
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* ---------------------------RESPONSIVE NAV----------------------*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #00000080;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #ff7300;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
